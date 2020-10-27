@@ -386,11 +386,21 @@
   
   <script src="js/main.js"></script>
 
-      <script type="text/javascript">
+<!--       <script type="text/javascript">
 	$("#submit-button").click(function(e) {
   		e.preventDefault();
 	    alert("Thank you for Your Confirmation!");
 	});
-    </script>
+    </script> -->
+	<script type="text/javascript">
+    	$("#my-form").submit(function(e) {
+	  		e.preventDefault();
+
+			var $form = $(this);
+			$.post($form.attr("action"), $form.serialize()).then(function() {
+				alert("Thank you!");
+			});
+		});
+    </script> 
   </body>
 </html>
