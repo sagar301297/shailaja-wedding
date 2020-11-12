@@ -109,7 +109,7 @@
 		});
 
 		$('.carousel-testimony').owlCarousel({
-			autoplay: true,
+			autoplay: false,
 			autoHeight: true,
 			center: true,
 			loop: true,
@@ -117,7 +117,7 @@
 			margin: 30,
 			stagePadding: 0,
 			nav: false,
-			dots: true,
+			dots: false,
 			navText: ['<span class="ion-ios-arrow-back">', '<span class="ion-ios-arrow-forward">'],
 			responsive:{
 				0:{
@@ -303,7 +303,7 @@
 
 	function makeTimer() {
 
-		var endTime = new Date("17 December 2020 8:00:00 GMT+05:30");			
+		var endTime = new Date("17 December 2020 11:30:00 GMT+05:30");			
 		endTime = (Date.parse(endTime) / 1000);
 
 		var now = new Date();
