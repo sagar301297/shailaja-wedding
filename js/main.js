@@ -110,14 +110,14 @@
 
 		$('.carousel-testimony').owlCarousel({
 			autoplay: false,
-			autoHeight: true,
-			center: true,
-			loop: true,
+			autoHeight: false,
+			center: false,
+			loop: false,
 			items:1,
 			margin: 30,
 			stagePadding: 0,
 			nav: false,
-			dots: true,
+			dots: false,
 			navText: ['<span class="ion-ios-arrow-back">', '<span class="ion-ios-arrow-forward">'],
 			responsive:{
 				0:{
