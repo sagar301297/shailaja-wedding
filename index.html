@@ -33,24 +33,16 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
 }
 
-.items{
-  float:none; /* disable the float */
-  display: inline-block; /* make blocks inline-block */
-  text-align: initial; /* restore text-align to default */
+
+
+.custom-class{
+	max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
 }
-@media (min-width: 768px)
-.cus-row-4 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 33.33333%;
-    flex: 0 0 33.33333%;
-    max-width: 32.33333%;
-}
-.cus-row-4
-{
-       -webkit-box-flex: 0;
-    -ms-flex: 0 0 33.33333%;
-    flex: 0 0 33.33333%;
-    max-width: 32.33333%;
+@media (min-width: 900px) {
+  .custom-class { grid-template-columns: repeat(3, 1fr); }
 }
 
 </style>
